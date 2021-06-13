@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sen:wght@400;700;800&display=swap');
+
+html,
+body {
+  font-family: Sen, Arial, Helvetica, sans-serif;
+}
+
+body {
+  padding-top: 5rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Jost, Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+.navbar-brand {
+  font-family: Jost, Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: x-large;
+}
+
+.nav-item > a {
+  position: relative;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.nav-item > a::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #000;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.nav-item > a:hover::before {
+  visibility: visible;
+  transform: scaleX(1);
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+.card-img-top {
+  object-fit: cover !important;
+  height: 12rem !important;
+}
+
+/* TODO: DarkMode */
+/* @media (prefers-color-scheme: dark) {
+  body {
+    background: #000;
+  }
+} */

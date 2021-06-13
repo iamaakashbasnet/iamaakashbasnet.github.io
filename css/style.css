@@ -52,6 +52,12 @@ h6 {
 
 .navbar-toggler {
   border: none;
+  outline: none;
+  box-shadow: none !important;
+}
+
+.navbar-collapse {
+  transition: none;
 }
 
 .card-img-top {
@@ -59,9 +65,23 @@ h6 {
   height: 12rem !important;
 }
 
+/*
+  Utils
+*/
+.no-transition {
+  -webkit-transition: height 0 !important;
+  -moz-transition: height 0 !important;
+  -ms-transition: height 0 !important;
+  -o-transition: height 0 !important;
+  transition: height 0 !important;
+}
+
+/* 
+  DarkMode
+*/
 @media (prefers-color-scheme: dark) {
   body {
-    background: #0e1111;
+    background: #11141a;
     color: var(--bs-light);
   }
 

@@ -81,7 +81,7 @@ h6 {
 */
 @media (prefers-color-scheme: dark) {
   body {
-    background: #11141a;
+    background: #171a1c;
     color: var(--bs-light);
   }
 
@@ -92,5 +92,9 @@ h6 {
   .badge {
     background: var(--bs-gray-dark) !important;
     color: var(--bs-light) !important;
+  }
+
+  .border-top {
+    border-color: #212529 !important;
   }
 }

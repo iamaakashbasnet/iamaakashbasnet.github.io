@@ -65,7 +65,7 @@ p {
 }
 
 .social-icons .fab {
-  font-size: x-large;
+  font-size: larger;
   text-decoration: none;
   color: #f4f4f4;
   margin: 0 0.5em;
@@ -81,7 +81,7 @@ p {
   body {
     background: url('./../imgs/bg-dark.png') no-repeat center center;
   }
-  
+
   .social-icons .fab:hover {
     color: #10b5a1;
   }

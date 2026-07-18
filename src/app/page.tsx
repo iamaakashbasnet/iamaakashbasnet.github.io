@@ -23,7 +23,7 @@ export default function HomePage() {
         <StaggerItem>
           <p className="mt-7 max-w-md text-[1.05rem] leading-relaxed text-muted-foreground">
             I build products end to end: software, systems, and strategy. I also
-            lead{' '}
+            founded and lead{' '}
             <a
               href={site.links.covertview}
               target="_blank"
@@ -41,12 +41,14 @@ export default function HomePage() {
             <Link href="/blog/" className={cn(buttonVariants({ size: 'lg' }))}>
               Read blog
             </Link>
-            <Link
-              href="/contact/"
+            <a
+              href={site.links.resume}
+              target="_blank"
+              rel="noopener noreferrer"
               className={cn(buttonVariants({ variant: 'outline', size: 'lg' }))}
             >
-              Contact
-            </Link>
+              Resume
+            </a>
           </div>
         </StaggerItem>
       </Stagger>

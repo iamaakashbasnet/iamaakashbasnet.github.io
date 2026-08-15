@@ -22,8 +22,8 @@ export default function HomePage() {
 
         <StaggerItem>
           <p className="mt-7 max-w-md text-[1.05rem] leading-relaxed text-muted-foreground">
-            I build products end to end: software, systems, and strategy. I also
-            founded and lead{' '}
+            I build products end to end: software, systems, and strategy. I'm
+            currently founding and leading{' '}
             <a
               href={site.links.covertview}
               target="_blank"
@@ -32,7 +32,7 @@ export default function HomePage() {
             >
               CovertView
             </a>
-            , a market intelligence platform for traders.
+            , a modern market screening platform for traders.
           </p>
         </StaggerItem>
 

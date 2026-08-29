@@ -8,9 +8,11 @@ export const site = {
   location: 'Kathmandu, Nepal',
   url: 'https://aakashbasnet.com.np',
   avatar: '/me.png',
+  mediumUsername: 'iamaakashbasnet',
   links: {
     github: 'https://github.com/iamaakashbasnet',
     linkedin: 'https://linkedin.com/in/iamaakashbasnet',
+    medium: 'https://iamaakashbasnet.medium.com',
     covertview: 'https://covertview.vaskrneup.com/',
     resume:
       'https://drive.google.com/file/d/1bqLSzTaPMuwHtac7jxf4WY1-bxPhfyjQ/view',

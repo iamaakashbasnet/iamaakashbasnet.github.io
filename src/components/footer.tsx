@@ -25,6 +25,14 @@ export function Footer() {
             LinkedIn
           </a>
           <a
+            href={site.links.medium}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="transition-colors hover:text-foreground"
+          >
+            Medium
+          </a>
+          <a
             href="/contact/"
             className="transition-colors hover:text-foreground"
           >

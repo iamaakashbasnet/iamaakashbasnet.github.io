@@ -1,6 +1,8 @@
 # aakashbasnet.com.np
 
-Personal portfolio and blog. Next.js, shadcn/ui, Framer Motion. Blog posts live in `content/blog` as Markdown.
+Personal portfolio and blog. Next.js, shadcn/ui, Framer Motion.
+
+The blog is hybrid: Markdown in `content/blog` for longer research, plus latest Medium posts pulled from the public RSS feed.
 
 ## Branches
 
@@ -31,7 +33,7 @@ Static output lands in `out/`.
 
 ## New blog post
 
-Add a file under `content/blog/your-slug.md`:
+**On this site** — add a file under `content/blog/your-slug.md`:
 
 ```md
 ---
@@ -42,3 +44,5 @@ date: 2026-07-18
 
 Your content here.
 ```
+
+**On Medium** — publish as usual. New stories show up on `/blog` from the RSS feed (via rss2json, with a direct Medium RSS fallback at build time). No redeploy needed for visitors with JavaScript.

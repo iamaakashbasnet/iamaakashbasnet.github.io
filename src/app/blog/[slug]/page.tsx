@@ -8,8 +8,12 @@ type Props = {
   params: Promise<{ slug: string }>;
 };
 
+export const dynamicParams = false;
+
 export async function generateStaticParams() {
-  return getAllPostSlugs().map((slug) => ({ slug }));
+  const slugs = getAllPostSlugs();
+  // output: export cannot emit a dynamic route with zero paths
+  return (slugs.length > 0 ? slugs : ['_']).map((slug) => ({ slug }));
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
